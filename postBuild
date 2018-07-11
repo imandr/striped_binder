@@ -8,5 +8,5 @@ echo "-----"
 cat striped/client/__init__.py
 echo "-----"
 
-python2 setup.py install
-python2 -c "import striped; print ('=== installation complete ==='); print (striped.__version__); print ('===')"
+python setup.py install
+python -c "import striped; print ('=== installation complete ==='); print (striped.__version__); print ('===')"
