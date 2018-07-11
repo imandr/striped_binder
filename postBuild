@@ -1,4 +1,5 @@
 git clone http://cdcvs.fnal.gov/projects/nosql-ldrd striped
 cd striped/package
-python setup.py install --user
+python setup.py install
+python -c "import striped; print; print striped.__version__; print"
 pip install pandas vega
