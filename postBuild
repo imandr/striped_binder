@@ -1,6 +1,12 @@
 pip install pandas vega numpy
 
-git clone http://cdcvs.fnal.gov/projects/nosql-ldrd striped
-cd striped/package
+
+
+git clone http://cdcvs.fnal.gov/projects/nosql-ldrd
+cd nosql-ldrd/package
+echo "-----"
+cat striped/client/__init__.py
+echo "-----"
+
 python2 setup.py install
 python2 -c "import striped; print ('=== installation complete ==='); print (striped.__version__); print ('===')"
