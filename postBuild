@@ -10,3 +10,4 @@ echo "-----"
 
 python setup.py install
 python -c "import striped; print ('=== installation complete ==='); print (striped.__version__); print ('===')"
+exit 0
