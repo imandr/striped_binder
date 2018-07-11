@@ -1,4 +1,4 @@
-pip install pandas vega numpy
+pip install pandas vega numpy histbook
 
 
 
