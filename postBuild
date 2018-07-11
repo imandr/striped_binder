@@ -1,12 +1,6 @@
 pip install pandas vega numpy histbook
-
-
-
 git clone http://cdcvs.fnal.gov/projects/nosql-ldrd
 cd nosql-ldrd/package
-echo "-----"
-cat striped/client/__init__.py
-echo "-----"
 
 pip install .
 
