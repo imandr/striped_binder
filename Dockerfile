@@ -12,7 +12,7 @@ RUN curl https://bintray.com/sbt/rpm/rpm | tee /etc/yum.repos.d/bintray-sbt-rpm.
 		sbt \
 		python-pip \
 		python-devel && \
-	yum clean all && rm -rf /var/cache/yum/*
+	yum clean all && rm -rf /var/cache/yum
 
 RUN pip install --upgrade pip && \
 	pip install numpy jupyter vega pandas notebook
@@ -21,8 +21,8 @@ ENV NB_USER jovyan
 ENV NB_UID 1000
 ENV HOME /home/${NB_USER}
 
-RUN adduser --disabled-password \
-    --gecos "Default user" \
+RUN adduser \
+    --comment "Default user" \
     --uid ${NB_UID} \
     ${NB_USER}
 
